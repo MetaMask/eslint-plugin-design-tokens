@@ -1,6 +1,4 @@
 import type { Rule } from 'eslint';
-import type { Literal, TemplateLiteral } from 'estree';
-
 /**
  * Regular expression to match hex color values.
  * Added capturing group to extract the hex value.
@@ -23,7 +21,7 @@ export const colorNoHex: Rule.RuleModule = {
   },
   create(context) {
     return {
-      Literal(node: Literal) {
+      Literal(node) {
         if (typeof node.value === 'string') {
           const matches = node.value.match(hexColorRegex);
           if (matches) {
@@ -35,7 +33,7 @@ export const colorNoHex: Rule.RuleModule = {
           }
         }
       },
-      TemplateLiteral(node: TemplateLiteral) {
+      TemplateLiteral(node) {
         node.quasis.forEach((part) => {
           const matches = part.value.raw.match(hexColorRegex);
           if (matches) {
