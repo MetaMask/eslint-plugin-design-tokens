@@ -28,7 +28,7 @@ export const colorNoHex: Rule.RuleModule = {
             const hexValue = matches[1] as string; // Type assertion to string
             context.report({
               node,
-              message: `'${hexValue}' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+              message: `'${hexValue}' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
             });
           }
         }
@@ -40,7 +40,7 @@ export const colorNoHex: Rule.RuleModule = {
             const hexValue = matches[1] as string; // Type assertion to string
             context.report({
               node: part,
-              message: `'${hexValue}' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+              message: `'${hexValue}' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
             });
           }
         });
