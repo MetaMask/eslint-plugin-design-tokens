@@ -24,7 +24,7 @@ ruleTester.run('color-no-hex', colorNoHex, {
       code: `const color = "#abc";`,
       errors: [
         {
-          message: `'#abc' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+          message: `'#abc' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
         },
       ],
     },
@@ -32,7 +32,7 @@ ruleTester.run('color-no-hex', colorNoHex, {
       code: `const backgroundColor = "#123456";`,
       errors: [
         {
-          message: `'#123456' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+          message: `'#123456' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
         },
       ],
     },
@@ -41,7 +41,7 @@ ruleTester.run('color-no-hex', colorNoHex, {
       code: `const borderColor = \`#abcdef\`;`,
       errors: [
         {
-          message: `'#abcdef' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+          message: `'#abcdef' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
         },
       ],
     },
@@ -49,7 +49,7 @@ ruleTester.run('color-no-hex', colorNoHex, {
       code: `const boxShadow = \`5px 5px 5px #888\`;`,
       errors: [
         {
-          message: `'#888' Hex color values are not allowed. Consider using design tokens instead. For more information, visit: https://github.com/MetaMask/design-tokens or reach out to the design system team #metamask-design-system.`,
+          message: `'#888' Hex color values are not allowed. Consider using design tokens instead. For support reach out to the design system team #metamask-design-system on Slack.`,
         },
       ],
     },
