@@ -15,7 +15,7 @@ export const colorNoHex: Rule.RuleModule = {
     docs: {
       description: 'Prevent the use of hex color values.',
       recommended: true,
-      url: 'https://github.com/your-plugin-url-here#color-no-hex',
+      url: 'https://github.com/MetaMask/eslint-plugin-design-tokens/blob/main/docs/rules/color-no-hex.md',
     },
     schema: [], // This rule does not take any options
   },
