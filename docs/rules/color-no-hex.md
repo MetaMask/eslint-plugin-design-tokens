@@ -42,6 +42,19 @@ This rule does not accept any options. Its sole purpose is to flag the use of in
 You might choose not to enable this rule if:
 
 - Your project has not adopted the MetaMask design system.
-- There are specific cases where direct hexadecimal color usage is necessary and cannot be abstracted (although these cases should be rare and well-justified).
+- There are specific cases where direct hexadecimal color usage is necessary and cannot be abstracted. This includes assets like SVG graphics, although such exceptions should be rare and well-justified. In such cases, you can disable the rule for specific files or folders by adding overrides in your ESLint configuration. For example, to disable the rule in asset files or folders, you can use:
 
-Adhering to this rule helps ensure that your project's color definitions are centralized and easily manageable, making it simpler to adapt or re-theme your application as needed.
+```json
+"overrides": [
+  {
+    "files": ["path/to/assets/*", "another/path/to/specific/files/*"],
+    "rules": {
+      "@metamask/design-tokens/color-no-hex": "off"
+    }
+  }
+]
+```
+
+This configuration allows you to selectively apply the rule where it makes sense, while accommodating necessary exceptions.
+
+Adhering to this rule helps ensure that your project's color definitions are centralized and easily manageable, facilitating simpler adaptations or re-theming of your application as needed.
