@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0]
 
-### Uncategorized
+### Added
 
 - Adding `color-no-hex` rule ([#11](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/11))
 
