@@ -33,6 +33,7 @@ Fixes:
 - [ ] I've completed the PR template to the best of my ability
 - [ ] I’ve included tests if applicable
 - [ ] I’ve documented my code using [JSDoc](https://jsdoc.app/) format if applicable
+- [ ] I've added screenshots and/or recordings to visualize the before and after of my changes
 
 ## **Pre-merge reviewer checklist**
 
