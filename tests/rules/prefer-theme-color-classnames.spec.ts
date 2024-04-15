@@ -30,45 +30,20 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
 
   invalid: [
     {
-      code: `const className = "bg-slateGray-500";`,
+      code: `const className = "bg-customColor-500";`,
       options: [
         {
-          discouragedColors: [
-            'slateGray',
-            'blue',
-            'red',
-            'gray',
-            'midnight',
-            'green',
-            'orange',
-            'black',
-            'white',
-          ],
+          discouragedColors: ['customColor'],
         },
       ],
       errors: [
         {
-          message: `'bg-slateGray-500' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
+          message: `'bg-customColor-500' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },
     {
       code: `const className = "border-blue-200";`,
-      options: [
-        {
-          discouragedColors: [
-            'slateGray',
-            'blue',
-            'red',
-            'gray',
-            'midnight',
-            'green',
-            'orange',
-            'black',
-            'white',
-          ],
-        },
-      ],
       errors: [
         {
           message: `'border-blue-200' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
@@ -77,21 +52,6 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
     },
     {
       code: `const className = "text-red-600";`,
-      options: [
-        {
-          discouragedColors: [
-            'slateGray',
-            'blue',
-            'red',
-            'gray',
-            'midnight',
-            'green',
-            'orange',
-            'black',
-            'white',
-          ],
-        },
-      ],
       errors: [
         {
           message: `'text-red-600' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
@@ -99,25 +59,10 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
       ],
     },
     {
-      code: `const templateString = \`bg-midnight-\${opacity}\`;`,
-      options: [
-        {
-          discouragedColors: [
-            'slateGray',
-            'blue',
-            'red',
-            'gray',
-            'midnight',
-            'green',
-            'orange',
-            'black',
-            'white',
-          ],
-        },
-      ],
+      code: `const templateString = \`bg-blue-\${opacity}\`;`,
       errors: [
         {
-          message: `'bg-midnight' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
+          message: `'bg-blue' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },

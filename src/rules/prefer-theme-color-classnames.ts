@@ -25,15 +25,19 @@ export const preferThemeColorClassnames: Rule.RuleModule = {
               minLength: 1, // This ensures that the string is not empty but does not prevent whitespace-only strings.
             },
             default: [
-              'slateGray',
               'blue',
               'red',
               'gray',
-              'midnight',
+              'slateGray',
               'green',
               'orange',
               'black',
               'white',
+              'indigo',
+              'yellow',
+              'purple',
+              'pink',
+              'teal',
             ],
           },
         },
@@ -49,15 +53,19 @@ export const preferThemeColorClassnames: Rule.RuleModule = {
 
     // Default to a list of discouraged color names if none are provided in the options.
     const discouragedColors: string[] = options.discouragedColors || [
-      'slateGray',
       'blue',
       'red',
       'gray',
-      'midnight',
+      'slateGray',
       'green',
       'orange',
       'black',
       'white',
+      'indigo',
+      'yellow',
+      'purple',
+      'pink',
+      'teal',
     ];
 
     // Validate discouragedColors to ensure no empty or whitespace-only strings
