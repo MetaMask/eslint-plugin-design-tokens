@@ -48,7 +48,7 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
       ],
       errors: [
         {
-          message: `'bg-slateGray-500' usage of literal color class names is discouraged. Consider using theme-specific class names instead.`,
+          message: `'bg-slateGray-500' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },
@@ -71,7 +71,7 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
       ],
       errors: [
         {
-          message: `'border-blue-200' usage of literal color class names is discouraged. Consider using theme-specific class names instead.`,
+          message: `'border-blue-200' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },
@@ -94,7 +94,7 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
       ],
       errors: [
         {
-          message: `'text-red-600' usage of literal color class names is discouraged. Consider using theme-specific class names instead.`,
+          message: `'text-red-600' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },
@@ -117,7 +117,7 @@ ruleTester.run('prefer-theme-color-classnames', preferThemeColorClassnames, {
       ],
       errors: [
         {
-          message: `'bg-midnight' usage of literal color class names is discouraged. Consider using theme-specific class names instead.`,
+          message: `'bg-midnight' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
         },
       ],
     },

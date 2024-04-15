@@ -1,10 +1,10 @@
 # Encourage the Use of Theme Color Classnames (`@metamask/design-tokens/prefer-theme-color-classnames`)
 
-This rule encourages the use of theme-specific color classnames instead of hardcoded color names, promoting a centralized approach to color management via [design tokens](https://github.com/MetaMask/design-tokens). By advocating for the use of [design tokens](https://github.com/MetaMask/design-tokens) for colors, this rule helps ensure consistency, design system alignment, scalability, and ease of maintenance across your project's UI.
+This rule encourages the use of theme color classnames instead of literal color names, promoting theme safe and consistent color management via [design tokens](https://github.com/MetaMask/design-tokens). By advocating for the use of [design tokens](https://github.com/MetaMask/design-tokens) for colors, this rule helps ensure consistency, design system alignment, scalability, and ease of maintenance across your project's UI.
 
 ## Rule Details
 
-The `prefer-theme-color-classnames` rule is aimed at encouraging the use of theme-specific CSS class names over direct references to color names. This practice supports theming, reusability, and easier updates to the color palette.
+The `prefer-theme-color-classnames` rule is aimed at encouraging the use of theme color CSS class names over direct references to color names. This practice supports theming, reusability, and easier updates to the color palette.
 
 Examples of **incorrect** code for this rule:
 
@@ -24,7 +24,7 @@ Examples of **correct** code for this rule:
 
 ## Options
 
-This rule does not accept any options. Its primary purpose is to encourage the use of theme-specific color classnames instead of hardcoded color names.
+This rule does not accept any options. Its primary purpose is to encourage the use of theme color classnames instead of hardcoded color names.
 
 ## Example Configuration
 

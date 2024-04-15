@@ -2,14 +2,14 @@ import type { Rule } from 'eslint';
 import type { Literal, TemplateLiteral, Node as ESTreeNode } from 'estree';
 
 /**
- * Rule to encourage the use of theme-specific color class names instead of literal color class names.
+ * Rule to encourage the use of theme color class names instead of literal color class names.
  */
 export const preferThemeColorClassnames: Rule.RuleModule = {
   meta: {
     type: 'suggestion',
     docs: {
       description:
-        'Encourage the use of theme-specific color class names instead of literal color class names.',
+        'Encourage the use of theme color class names instead of literal color class names.',
       recommended: true,
       url: 'https://github.com/MetaMask/eslint-plugin-design-tokens/blob/main/docs/rules/prefer-theme-color-classnames.md',
     },
@@ -41,7 +41,7 @@ export const preferThemeColorClassnames: Rule.RuleModule = {
       },
     ],
     messages: {
-      discouragedColorUsage: `'{{className}}' usage of literal color class names is discouraged. Consider using theme-specific class names instead.`,
+      discouragedColorUsage: `'{{className}}' usage of literal color class names is discouraged. Consider using theme color class names instead.`,
     },
   },
   create(context) {
