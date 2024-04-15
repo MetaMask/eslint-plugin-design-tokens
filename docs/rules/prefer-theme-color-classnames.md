@@ -27,15 +27,19 @@ Examples of **correct** code for this rule:
 This rule accepts an optional single configuration object with the following properties:
 
 - `discouragedColors`: An array of strings representing color names that should be avoided. Providing this array will override the default set of discouraged colors. The default colors considered discouraged are:
-  - `slateGray`
-  - `blue`
-  - `red`
-  - `gray`
-  - `midnight`
-  - `green`
-  - `orange`
-  - `black`
-  - `white`
+- `blue`
+- `red`
+- `gray`
+- `slateGray`
+- `green`
+- `orange`
+- `black`
+- `white`
+- `indigo`
+- `yellow`
+- `purple`
+- `pink`
+- `teal`
 
 ### Example configuration:
 
