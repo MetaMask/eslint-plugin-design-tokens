@@ -7,5 +7,5 @@ import {
 export const rules = {
   'no-deprecated-classnames': noDeprecatedClassnames,
   'color-no-hex': colorNoHex,
-  'no-tailwind-brand-colors': preferThemeColorClassnames,
+  'prefer-theme-color-classnames': preferThemeColorClassnames,
 };
