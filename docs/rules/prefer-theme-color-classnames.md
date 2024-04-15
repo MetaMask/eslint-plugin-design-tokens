@@ -4,7 +4,7 @@ This rule encourages the use of theme color classnames instead of literal color 
 
 ## Rule Details
 
-The `prefer-theme-color-classnames` rule is aimed at encouraging the use of theme color CSS class names over direct references to color names. This practice supports theming, reusability, and easier updates to the color palette.
+The `prefer-theme-color-classnames` rule is aimed at encouraging the use of CSS theme color class names over direct references to literal color names e.g. blue, red, green, slateGray, etc. This practice supports theming, reusability, and easier updates to the color palette.
 
 Examples of **incorrect** code for this rule:
 
@@ -17,20 +17,38 @@ Examples of **incorrect** code for this rule:
 Examples of **correct** code for this rule:
 
 ```jsx
-// Using design token CSS variables
-<div className="bg-primary-default">...</div>
-<div className="text-error-default">...</div>
+// Using design token theme color class names
+<div className="bg-default">...</div>
+<div className="text-primary-default">...</div>
 ```
 
 ## Options
 
-This rule does not accept any options. Its primary purpose is to encourage the use of theme color classnames instead of hardcoded color names.
+This rule accepts an optional single configuration object with the following properties:
 
-## Example Configuration
+- `discouragedColors`: An array of strings representing color names that should be avoided. Providing this array will override the default set of discouraged colors. The default colors considered discouraged are:
+  - `slateGray`
+  - `blue`
+  - `red`
+  - `gray`
+  - `midnight`
+  - `green`
+  - `orange`
+  - `black`
+  - `white`
+
+### Example configuration:
 
 ```json
 {
-  "@metamask/design-tokens/prefer-theme-color-classnames": "warn"
+  "rules": {
+    "your-plugin/prefer-theme-color-classnames": [
+      "warn",
+      {
+        "discouragedColors": ["customColor", "anotherColor"] // Optional
+      }
+    ]
+  }
 }
 ```
 
@@ -39,17 +57,17 @@ This rule does not accept any options. Its primary purpose is to encourage the u
 You might choose not to enable this rule if:
 
 - Your project has not adopted the MetaMask design system.
-- There are specific cases where the direct usage of hardcoded color names is necessary and cannot be replaced with themed alternatives. This includes legacy parts of your application or during a gradual migration to design tokens. In such cases, you can disable the rule for specific files or folders by adding overrides in your ESLint configuration. For example, to disable the rule in legacy files or folders, you can use:
+- Your project does not use utility classnames such as Tailwind
+- There are specific cases where the direct usage of literal color names is necessary and cannot be replaced with themed alternatives. This includes colors that should remain the same regardless of theme. In such cases, you can disable the rule for specific lines. For example, to disable the rule for the yellow of this star icon, you can use:
 
 ```json
-"overrides": [
-  {
-    "files": ["legacy/**/*.jsx", "another/path/to/specific/files/*"],
-    "rules": {
-      "@metamask/design-tokens/prefer-theme-color-classnames": "off"
-    }
-  }
-]
+<Star
+  className={classnames({
+    // eslint-disable-next-line @metamask/design-tokens/prefer-theme-color-classnames
+    'fill-yellow-500': isWatched,
+    'fill-icon-muted': !isWatched,
+  })}
+/>
 ```
 
 This configuration allows for selective application of the rule, accommodating necessary exceptions.
