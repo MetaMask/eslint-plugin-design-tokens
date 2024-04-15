@@ -42,7 +42,7 @@ This rule accepts an optional single configuration object with the following pro
 ```json
 {
   "rules": {
-    "your-plugin/prefer-theme-color-classnames": [
+    "@metamask/design-tokens/prefer-theme-color-classnames": [
       "warn",
       {
         "discouragedColors": ["customColor", "anotherColor"] // Optional
