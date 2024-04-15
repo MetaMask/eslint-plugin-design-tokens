@@ -64,7 +64,7 @@ You might choose not to enable this rule if:
 - Your project does not use utility classnames such as Tailwind
 - There are specific cases where the direct usage of literal color names is necessary and cannot be replaced with themed alternatives. This includes colors that should remain the same regardless of theme. In such cases, you can disable the rule for specific lines. For example, to disable the rule for the yellow of this star icon, you can use:
 
-```json
+```js
 <Star
   className={classnames({
     // eslint-disable-next-line @metamask/design-tokens/prefer-theme-color-classnames
