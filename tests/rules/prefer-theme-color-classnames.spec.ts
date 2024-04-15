@@ -1,6 +1,6 @@
 import { RuleTester } from 'eslint';
 
-import { preferThemeColorClassnames } from '../../src/rules/prefer-theme-color-classnames'; // Adjust the path as necessary
+import { preferThemeColorClassnames } from '../../src/rules/prefer-theme-color-classnames';
 
 const ruleTester = new RuleTester({
   // eslint-disable-next-line no-restricted-globals
