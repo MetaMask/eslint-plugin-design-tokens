@@ -41,7 +41,7 @@ This rule accepts an optional single configuration object with the following pro
 - `pink`
 - `teal`
 
-### Example configuration:
+### Example Configuration:
 
 ```json
 {
@@ -49,7 +49,7 @@ This rule accepts an optional single configuration object with the following pro
     "@metamask/design-tokens/prefer-theme-color-classnames": [
       "warn",
       {
-        "discouragedColors": ["customColor", "anotherColor"] // Optional
+        "discouragedColors": ["customColor", "anotherColor"]
       }
     ]
   }
