@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.0]
 
-### Uncategorized
+### Added
 
-- feat: adding prefer-theme-color-classnames rule ([#22](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/22))
-- chore: updating PR template to align better with mobile and extension ([#19](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/19))
-- chore: updating readme rule table with color-no-hex rule ([#18](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/18))
+- Adding `prefer-theme-color-classnames` rule ([#22](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/22))
+- Updating PR template to align better with mobile and extension ([#19](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/19))
+- Updating readme rule table with color-no-hex rule ([#18](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/18))
 
 ## [1.0.0]
 
