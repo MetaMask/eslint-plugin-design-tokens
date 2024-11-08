@@ -9,11 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.0]
 
-### Uncategorized
+### Changed
 
-- chore(deps): bump rollup in the npm_and_yarn group across 1 directory ([#29](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/29))
-- chore(deps): bump micromatch from 4.0.5 to 4.0.8 in the npm_and_yarn group across 1 directory ([#26](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/26))
-- chore: adding license field to package.json ([#28](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/28))
+- Adding (MIT OR Apache 2.0) license aligning with MetaMask’s open-source standards ([#28](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/28))
 
 ## [1.1.0]
 
