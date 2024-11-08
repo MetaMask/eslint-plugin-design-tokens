@@ -9,9 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.1]
 
-### Uncategorized
+### Changed
 
-- Revert "1.2.0 (#30)" ([#30](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/30))
+- Adding (MIT OR Apache 2.0) license aligning with MetaMask’s open-source standards ([#28](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/28))
 
 ## [1.1.0]
 
