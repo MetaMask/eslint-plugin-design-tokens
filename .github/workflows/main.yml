@@ -70,6 +70,10 @@ jobs:
     name: Publish release
     permissions:
       contents: write
+      # The called workflow cannot exceed these permissions. publish-npm
+      # needs id-token: write so action-npm-publish v7 can mint an OIDC
+      # token for trusted publishing.
+      id-token: write
     uses: ./.github/workflows/publish-release.yml
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
