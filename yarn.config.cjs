@@ -105,7 +105,8 @@ module.exports = defineConfig({
       }
 
       // The package must specify the expected node version constraint.
-      workspace.set('engines.node', '^18.18 || >=20');
+      // This matches metamask-design-system and drops Node.js 18, 20, and 22.
+      workspace.set('engines.node', '>=24');
 
       // The package is public.
       workspace.set('publishConfig.access', 'public');

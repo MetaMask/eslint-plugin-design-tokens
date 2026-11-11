@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- **BREAKING:** Dropped Node.js 18, 20, and 22 support. This package now requires Node.js 24 or newer ([#38](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/38))
+
 ## [1.1.1]
 
 ### Changed
