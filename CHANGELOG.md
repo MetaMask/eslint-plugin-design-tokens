@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0]
+
+### Uncategorized
+
+- Revert "2.0.0" ([#41](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/41))
+- ci: upgrade action-npm-publish to v7 ([#40](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/40))
+- 2.0.0 ([#39](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/39))
+- chore: align tooling with metamask-design-system (migration Phase A) ([#38](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/38))
+- docs: add metamask-design-system migration notice to README ([#37](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/37))
+- chore: pin GitHub Actions to commit SHAs ([#36](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/36))
+- chore(deps): bump nanoid in the npm_and_yarn group across 1 directory ([#34](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/34))
+- chore(deps): bump cross-spawn ([#33](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/33))
+
 ## [1.1.1]
 
 ### Changed
@@ -33,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[Unreleased]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v1.1.1...v2.0.0
 [1.1.1]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/MetaMask/eslint-plugin-design-tokens/compare/v0.1.0...v1.0.0
