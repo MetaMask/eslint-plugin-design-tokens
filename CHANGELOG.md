@@ -9,16 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0]
 
-### Uncategorized
+### Changed
 
-- Revert "2.0.0" ([#41](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/41))
-- ci: upgrade action-npm-publish to v7 ([#40](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/40))
-- 2.0.0 ([#39](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/39))
-- chore: align tooling with metamask-design-system (migration Phase A) ([#38](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/38))
-- docs: add metamask-design-system migration notice to README ([#37](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/37))
-- chore: pin GitHub Actions to commit SHAs ([#36](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/36))
-- chore(deps): bump nanoid in the npm_and_yarn group across 1 directory ([#34](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/34))
-- chore(deps): bump cross-spawn ([#33](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/33))
+- **BREAKING:** The minimum supported Node.js version is now 24 (`engines.node` is `>=24`) ([#38](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/38))
+- This package is being migrated to the [`metamask-design-system`](https://github.com/MetaMask/metamask-design-system) monorepo ([#37](https://github.com/MetaMask/eslint-plugin-design-tokens/pull/37))
 
 ## [1.1.1]
 
